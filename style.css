@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+}
+
+/* título */
+h1 {
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+
+/* parágrafo */
+p {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* esconde checkbox */
+input {
+    display: none;
+}
+
+/* botão */
+.botao {
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #00a000;
+    transform: scale(1.05);
+}
+
+/* tabela escondida */
+.tabela {
+    display: none;
+    margin-top: 20px;
+}
+
+/* aparece quando clicar */
+#btn:checked ~ .tabela {
+    display: block;
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 150%;
+    max-width: 1500px;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 0 20px rgba(0, 255, 76, 0.4);
+}
+
+/* cabeçalho */
+th {
+    background: linear-gradient(45deg, #00ff4c, #00b33c);
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* células */
+td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* efeito hover nas linhas */
+tr:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+/* arredondar só o topo */
+tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
